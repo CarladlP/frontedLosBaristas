@@ -16,30 +16,30 @@
   </header>
 
   <div class="container" id="app">
-    <form style="background-color: #F2ECBE; margin: 10px auto; width: 400px; padding: 20px;">
-      <main>
-        <h2>Editar Producto </h2><br>
-        <div class="mb-3">
-          <label for="id">Id</label>
-          <input type="number" name="id" id="id" disabled v-model="id">
-        </div>
-        <div class="mb-3">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" v-model="nombre">
-        </div>
-        <div class="mb-3">
-          <label for="precio">Precio</label>
-          <input type="number" name="precio" id="precio" v-model="precio">
-        </div>
-        <div class="mb-3">
-          <label for="imagen">Imagen</label>
-          <input type="text" name="imagen" id="imagen" v-model="imagen">
-          <img width="100" :src="imagen" alt="">
-        </div><br>
-        <button type="button" class="btn btn-custom-color" v-on:click="modificar">Guardar</button>
-      </main>
+    <form style="background-color: #E2C799; margin: 10px auto; max-width: 400px; padding: 20px; text-align: center;">
+        <main>
+            <h2>Editar Producto</h2><br>
+            <div class="mb-3">
+                <label for="id">Id</label><br>
+                <input type="number" name="id" id="id" disabled class="form-control" v-model="id">
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="text-center">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" class="form-control" v-model="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="precio" class="text-center">Precio</label><br>
+                <input type="number" name="precio" id="precio" class="form-control" v-model="precio" min="0">
+            </div>
+            <div class="mb-3">
+                <label for="imagen" class="text-center">Imagen</label><br>
+                <input type="text" name="imagen" id="imagen" class="form-control" v-model="imagen">
+                <img width="100" :src="imagen" alt="">
+            </div><br>
+            <button type="button" class="btn btn-custom-color btn-light">Guardar</button>
+        </main>
     </form>
-  </div>
+</div>
 
   <footer class="bg-dark text-white text-center py-4 mt-4">
     <div class="container">
