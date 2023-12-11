@@ -36,7 +36,7 @@
                 <input type="text" name="imagen" id="imagen" class="form-control" v-model="imagen">
                 <img width="100" :src="imagen" alt="">
             </div><br>
-            <button type="button" class="btn btn-custom-color btn-light">Guardar</button>
+            <button type="button" class="btn btn-custom-color btn-light" v-on:click="modificar">Guardar</button>
         </main>
     </form>
 </div>
